@@ -1,0 +1,334 @@
+body {
+    background-color: blueviolet;
+    display: grid;
+    place-items: center;
+}
+
+.menu {
+    background: linear-gradient(to right, #8f2b92, #64229b);
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    box-shadow: 0.7px 4px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu img {
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0.7px 2px 12px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    background-color: rgb(76, 48, 85);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    overflow: hidden;
+    box-shadow: 0.7px 2px 12px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #8f2b92;
+}
+
+.hidden-text {
+    display: none;
+    overflow-wrap: break-word;
+    border: none;
+    background-color: rgb(105, 5, 84);
+    text-align: start;
+    color: rgb(255, 255, 255);
+    box-shadow: 0.5px 4px 10px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hidden-text a {
+    color: rgb(234, 201, 245);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.hidden-text a:hover {
+    color: rgb(45, 7, 58);
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-5%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hidden-text.show {
+    display: block;
+    animation: slideIn 1s ease-out;
+}
+
+.sessao-produto {
+    text-align: center;
+}
+
+.sessao-produto img {
+    animation: fadeIn 1.2s ease-out;
+    height: auto;
+    border-radius: 50%;
+}
+
+.sessao-produto .texto {
+    text-align: start;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+}
+
+.insta a {
+    display: flex;
+    justify-content: center;
+    color: rgb(42, 19, 61);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.insta a:hover {
+    color: rgb(235, 183, 236);
+}
+
+/* Estilos para computadores desktop */
+@media only screen and (min-width: 1025px) {
+    body {
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .menu {
+        border-radius: 40px;
+        width: 400px;
+        padding-block: 60px;
+    }
+
+    .menu img {
+        margin-top: -110px;
+        margin-bottom: 20px;
+        width: 110px;
+        border: 8px solid rgb(135, 81, 167);
+    }
+
+    .button {
+        border: 8px solid rgb(103, 45, 134);
+        border-radius: 20px;
+        padding: 12px;
+        margin-bottom: 30px;
+        font-size: 1.4em;
+        width: 60%;
+    }
+
+    .hidden-text {
+        margin-inline: 30px;
+        margin-bottom: 10%;
+        padding: 5%;
+        font-size: 1em;
+        border-radius: 30px;
+    }
+
+    .sessao-produto img {
+        margin-block: 5%;
+        width: 80px;
+        border: 5px solid rgb(106, 49, 139);
+        margin-right: 7px;
+    }
+
+    .sessao-produto .sutia {
+        height: 80px;
+        /* pra ficar igual as outras imgs */
+    }
+
+    .insta a {
+        margin-top: 2px;
+        margin-bottom: -40px;
+        font-size: 1.3em;
+    }
+}
+
+/* Estilos para tablets */
+@media only screen and (max-width: 1024px) and (min-width: 481px) {
+    body {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .menu {
+        border-radius: 30px;
+        width: 350px;
+        padding-block: 40px;
+    }
+
+    .menu img {
+        margin-top: -90px;
+        margin-bottom: 20px;
+        width: 100px;
+        border: 8px solid rgb(135, 81, 167);
+    }
+
+    .button {
+        border: 8px solid rgb(103, 45, 134);
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 25px;
+        font-size: 1.2em;
+        width: 200px;
+    }
+
+    .hidden-text {
+        margin-inline: 10%;
+        margin-bottom: 10%;
+        padding: 5%;
+        font-size: 1em;
+        border-radius: 20px;
+    }
+
+    .sessao-produto img {
+        margin-block: 5%;
+        width: 27%;
+        border: 5px solid rgb(106, 49, 139);
+    }
+
+    .sessao-produto .sutia {
+        height: 66px;
+    }
+
+    .insta a {
+        margin-top: 8px;
+        margin-bottom: -22px;
+        font-size: 1.1em;
+    }
+}
+
+/* Estilos para celulares */
+@media only screen and (max-width: 480px) and (min-width:371px) {
+    body {
+        margin-top: 120px;
+        margin-bottom: 40px;
+    }
+
+    .menu {
+        border-radius: 30px;
+        width: 345px;
+        padding-block: 40px;
+    }
+
+    .menu img {
+        margin-top: -110px;
+        margin-bottom: 40px;
+        width: 130px;
+        border: 12px solid rgb(135, 81, 167);
+    }
+
+    .button {
+        border: 10px solid rgb(103, 45, 134);
+        border-radius: 30px;
+        padding: 10px;
+        margin-bottom: 40px;
+        font-size: 1.7em;
+        width: 260px;
+    }
+
+    .hidden-text {
+        margin-inline: 20px;
+        margin-bottom: 50px;
+        padding: 5%;
+        font-size: 1em;
+        border-radius: 20px;
+    }
+
+    .sessao-produto img {
+        margin-block: 5%;
+        width: 27%;
+        border: 5px solid rgb(106, 49, 139);
+    }
+
+    .sessao-produto .sutia {
+        height: 72.5px;
+    }
+
+    .insta a {
+        margin-top: 20px;
+        margin-bottom: -10px;
+        font-size: 1.5em;
+    }
+}
+
+/* Estilos para celulares com largura menor*/
+@media only screen and (max-width: 370px) {
+    body {
+        margin-top: 90px;
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        border-radius: 30px;
+        width: 260px;
+        padding-block: 40px;
+    }
+
+    .menu img {
+        margin-top: -90px;
+        margin-bottom: 30px;
+        width: 100px;
+        border: 10px solid rgb(135, 81, 167);
+    }
+
+    .button {
+        border: 10px solid rgb(103, 45, 134);
+        border-radius: 25px;
+        padding: 10px;
+        margin-bottom: 40px;
+        font-size: 1.2em;
+        width: 200px;
+    }
+
+    .hidden-text {
+        margin-inline: 20px;
+        margin-bottom: 50px;
+        padding: 5%;
+        font-size: 0.8em;
+        border-radius: 20px;
+    }
+
+    .sessao-produto img {
+        margin-block: 5%;
+        width: 50%;
+        border: 5px solid rgb(106, 49, 139);
+    }
+
+    .sessao-produto .sutia {
+        height: 93px;
+    }
+
+    .insta a {
+        margin-bottom: -20px;
+        font-size: 1em;
+    }
+}

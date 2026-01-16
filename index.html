@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armário Íntimo</title>
+  <link rel="stylesheet" href="cods/estilo.css">
+  <link rel="icon" type="image/png" href="assets/logotipo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="menu">
+    <img src="assets/logo.jpg" alt="logo">
+    <p></p>
+
+    <button class="button" onclick="toggleText('sobre')">Sobre nós</button>
+
+    <div class="hidden-text" id="sobre">
+      Armário Íntimo é a sua loja especializada em lingerie e moda
+      íntima. Oferecemos uma ampla seleção de produtos de alta qualidade, cuidadosamente selecionados
+      para atender às suas necessidades de conforto e estilo. Nossa missão é proporcionar uma
+      experiência de compra única, onde você encontra peças que valorizam a sua feminilidade.
+      Estamos comprometidos com a satisfação dos nossos clientes e prontos para ajudar você a encontrar
+      as peças perfeitas.
+    </div>
+
+    <button class="button" onclick="toggleText('produtos')">Produtos</button>
+
+    <div class="hidden-text" id="produtos">
+      <h4>✨Destaques da Coleção:</h4>
+      <div class="sessao-produto">
+        <div>
+          <img src="assets/calcinhas.jpg" alt="calcinhas">
+          <img src="assets/camisola.jpg" alt="camisolas">
+          <img src="assets/sutias.jpg" alt="sutias" class="sutia">
+        </div>
+        <div class="texto">
+          <p>
+            🩲 <b>Calcinhas Sensuais: </b>Explore uma variedade de estilos, desde rendas delicadas até designs
+            provocantes. Encontre a combinação perfeita para cada ocasião e sinta-se confiante todos os dias.
+            <br><br><br>
+            🌙 <b>Camisolas Encantadoras: </b>Deixe-se envolver pela suavidade de nossas camisolas, projetadas para
+            elevar suas noites com elegância e conforto. Descubra opções que refletem sua personalidade única.
+            <br><br><br>
+            🌸 <b>Sutiãs que Valorizam: </b>Nossos sutiãs foram criados para oferecer suporte e realçar sua beleza
+            natural. Desde modelos clássicos até opções mais ousadas, temos algo para todos os gostos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <button class="button" onclick="toggleText('contato')">Contatos</button>
+
+    <div class="hidden-text" id="contato">
+      <p>
+        Entre em contato conosco para tirar dúvidas, fazer pedidos ou obter mais informações
+        sobre nossos produtos. Estamos disponíveis por telefone! :)
+      </p>
+      <ion-icon name="logo-whatsapp" style="color: rgb(255, 189, 233);"></ion-icon>
+      <b style="color: rgb(255, 189, 233);">(87) 9 8178-0401</b><br>
+      <p>
+        Ou acesse o link direto do nosso chat do whatsapp clicando
+        <a href="https://api.whatsapp.com/send/?phone=%2B5587981780401&text&type=phone_number&app_absent=0">aqui.</a>
+      </p>
+    </div>
+    <div class="insta">
+      <a href="https://www.instagram.com/armario_intiimo/">@armario_intiimo</a>
+    </div>
+  </div>
+  <script src="cods/anima.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
