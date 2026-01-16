@@ -1,7 +1,6 @@
 # 🩷 Armário Íntimo
 
 Site institucional da **Armário Íntimo**, uma loja especializada em lingerie e moda íntima feminina. O projeto apresenta a marca, seus principais produtos e formas de contato de maneira simples, elegante e responsiva.
-
 ---
 
 ## 📸 Visão Geral
